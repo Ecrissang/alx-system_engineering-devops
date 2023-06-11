@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "$(find . -type f -name "*.gif" | sort -f -i | sed s/.gif$// | tr n n)"
+find . -type f -iname *.gif -exec basename {} .gif \; | LC_COLLATE=C sort
