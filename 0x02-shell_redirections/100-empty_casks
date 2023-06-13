@@ -1,0 +1,5 @@
+#!/bin/bash
+
+find . -type f -empty -printf "%f
+" ; find . -type d -empty -printf "%f
+"
