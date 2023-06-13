@@ -1,5 +1,2 @@
 #!/bin/bash
-
-find . -type f -empty -printf "%f
-" ; find . -type d -empty -printf "%f
-"
+find . -empty | rev | cut -d/ -f1 | rev
